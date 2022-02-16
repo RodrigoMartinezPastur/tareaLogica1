@@ -3,22 +3,27 @@
 
 // Tarea 1
 
+// deneria de poner el sum en el return aun eso no lo tengo claro
 /*
-function numeros(num1, num2, num3, num4) {
-  let num = [num1, num2, num3, num4];
-  suma = num1 + num2 + num3 + num4;
-  return console.log(suma);
+function numeros() {
+  let num = [1, 2, 3, 4, 5];
+  sum = 0;
+  for (i = 0; i < num.length; i++) {
+    sum += num[i];
+  }
+  return sum;
 }
 
-numeros(1, 2, 3, 4);*/
+numeros();
+*/
 
 // tarea 2
 /*
 function pitagoras() {
   const base = 18;
   const altura = 15;
-  console.log((base * altura) / 2);
-  return;
+  resultado = (base * altura) / 2;
+  return resultado;
 }
 
 pitagoras();
@@ -38,20 +43,32 @@ pitagoras();
   }
 }
 años();*/
+/*
+function year() {
+  let dia = prompt("ingrese la cantidad de dias");
+  if (dia > Math.floor(365) && dia <= 3649) {
+    alert("1 year");
+  } else if (dia >= Math.ceil(3650)) {
+    alert("10 year");
+  } else {
+    alert("it's not a year");
+  }
+}
 
+year();
+*/
 // tarea 4 nose si la hice bien por que decia que retorne un boleano
 /*
 function dosString(palabra, palabra2) {
-  if (palabra.length == palabra2.length) {
-    alert("true");
+  if (palabra.length === palabra2.length) {
+    console.log(true);
   } else {
-    alert("false");
+    console.log(false);
   }
 }
 
 dosString("hola", "hola");
 */
-
 // Tarea 5
 /*
 function darVuelta(string) {
@@ -61,6 +78,22 @@ function darVuelta(string) {
 console.log(darVuelta("hola"));
 */
 
+// tarea 6
+// nose si seria la manera correcta pero solo se me ocurrio esta xd
+/*
+function divisible() {
+  let numero = prompt("ingrese un numero para saber si es divisible entre 5");
+  if (numero % 5 == 0) {
+    console.log(true);
+    return true;
+  } else {
+    console.log(false);
+    return false;
+  }
+}
+
+divisible();
+*/
 //tarea 7
 
 /*
@@ -72,17 +105,20 @@ console.log(firstMayus("buenas"));
 */
 
 //tarea 8
-
 /*
-function elMasAlto(num1, num2, num3, num4) {
-  let array = [num1, num2, num3, num4];
-  console.log(Math.max(num1, num2, num3, num4));
-  return;
+function elMasAlto() {
+  const array = [4, 5, 4, 85, 105];
+  mayor = 0;
+  for (i = 0; i < array.length; i++) {
+    if (mayor < array[i]) {
+      mayor = array[i];
+      console.log(mayor);
+    }
+  }
 }
 
-elMasAlto(50, 1, 35, 105);
+elMasAlto();
 */
-
 // tarea 9
 
 /*
@@ -94,16 +130,14 @@ console.log(firtsCharacter("tardes"));
 */
 
 // tarea 10
-
 /*
-function arrayToString(arr1, arr2, arr3, arr4, arr5, arr6) {
-  const laFuturaString = [arr1, arr2, arr3, arr4, arr5, arr6];
+function arrayToString() {
+  const laFuturaString = ["son", "las", "tres", "de", "manana"];
   const strin = laFuturaString.join(" ");
   console.log(strin);
-  return;
+  return strin;
 }
 
-
-arrayToString("son", "las", 3, "de", "la", "mañana");
+arrayToString();
 */
 // son las 3 de mañana y estoy en tu ventana
