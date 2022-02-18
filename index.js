@@ -3,19 +3,17 @@
 
 // Tarea 1
 
-// deneria de poner el sum en el return aun eso no lo tengo claro
-/*
-function numeros() {
-  let num = [1, 2, 3, 4, 5];
-  sum = 0;
-  for (i = 0; i < num.length; i++) {
-    sum += num[i];
+function numeritos(array) {
+  let esta = 0;
+  for (let i = 0; i < array.length; i++) {
+    esta += array[i];
   }
-  return sum;
+  return esta;
 }
 
-numeros();
-*/
+let algo = [1, 5, 5, 5, 5];
+
+numeritos(algo);
 
 // tarea 2
 /*
@@ -57,13 +55,12 @@ function year() {
 
 year();
 */
-// tarea 4 nose si la hice bien por que decia que retorne un boleano
 /*
 function dosString(palabra, palabra2) {
   if (palabra.length === palabra2.length) {
-    console.log(true);
+    return true;
   } else {
-    console.log(false);
+    return false;
   }
 }
 
@@ -77,17 +74,14 @@ function darVuelta(string) {
 
 console.log(darVuelta("hola"));
 */
-
 // tarea 6
 // nose si seria la manera correcta pero solo se me ocurrio esta xd
 /*
 function divisible() {
   let numero = prompt("ingrese un numero para saber si es divisible entre 5");
   if (numero % 5 == 0) {
-    console.log(true);
     return true;
   } else {
-    console.log(false);
     return false;
   }
 }
@@ -106,18 +100,17 @@ console.log(firstMayus("buenas"));
 
 //tarea 8
 /*
-function elMasAlto() {
-  const array = [4, 5, 4, 85, 105];
-  mayor = 0;
-  for (i = 0; i < array.length; i++) {
-    if (mayor < array[i]) {
-      mayor = array[i];
-      console.log(mayor);
-    }
+function elMasAlto(array) {
+  for (let i = 0; i < array.length; i++) {
+    array[i];
   }
+  return array;
 }
 
-elMasAlto();
+const elMayor = [100, 150, 1, 50, 7];
+let max = Math.max(...elMayor);
+
+elMasAlto(max);
 */
 // tarea 9
 
@@ -131,13 +124,14 @@ console.log(firtsCharacter("tardes"));
 
 // tarea 10
 /*
-function arrayToString() {
-  const laFuturaString = ["son", "las", "tres", "de", "manana"];
-  const strin = laFuturaString.join(" ");
-  console.log(strin);
-  return strin;
+function toString(algo) {
+  for (let i = 0; i < 1; i++) {
+    console.log(algo);
+  }
+  return algo;
 }
 
-arrayToString();
+const fututeString = ["hola", "buenas", "noches"];
+const muBien = fututeString.join(" ");
+toString(muBien);
 */
-// son las 3 de mañana y estoy en tu ventana
